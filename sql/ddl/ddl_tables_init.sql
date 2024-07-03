@@ -1,0 +1,12 @@
+USE `rabit_test_db`;
+
+CREATE TABLE IF NOT EXISTS `users` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS `advertisements` (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userid INT NOT NULL,
+    title VARCHAR(255) NOT NULL
+);
